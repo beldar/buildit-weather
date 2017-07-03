@@ -19,7 +19,7 @@ npm install
 To run in dev mode:
 
 ```
-npm start:dev
+npm run start:dev
 ```
 
 To build for production run:
@@ -44,7 +44,7 @@ To run them:
 npm test
 ```
 
-Note: Please ensure you have the latest Node LTS (v7.10 at the moment of this writting).
+Note: Please ensure you have the latest Node LTS (v7.10 at the moment of this writing).
 
 ## Notes
 

@@ -4,10 +4,15 @@ import {fetchWeather} from '../../modules/weather';
 import PropTypes from 'prop-types';
 import WeatherReport from '../WeatherReport';
 import './App.css';
+const API_KEY = '1611b57cd45b95fdf4632fcdc5fc4a86';
+const OWM = `http://api.openweathermap.org/data/2.5/forecast?q=London,uk&units=metric&APPID=${API_KEY}`;
+
+const isDev = () => document.location.hostname === 'localhost';
 
 export class App extends Component {
   componentDidMount() {
-    this.props.fetchData('/weather');
+    const url = isDev() ? OWM : '/weather';
+    this.props.fetchData(url);
   }
 
   getContent() {
