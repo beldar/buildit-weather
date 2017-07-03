@@ -38,6 +38,7 @@ Note: Please ensure you have the latest Node LTS (v7.10 at the moment of this wr
 
 ## Further improvements
 
+- Make the target city configurable and/or get geolocation from browser
 - Implement caching of the API calls using the service worker API for fully offline experience.
 - Improve the UI with weather images/icons
 - Show a chart of the different hours on each day instead of only text
