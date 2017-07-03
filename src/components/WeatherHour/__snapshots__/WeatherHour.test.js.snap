@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WeatherHour should not render if hour prop is not passed 1`] = `null`;
+
+exports[`WeatherHour should render correctly if hour prop is passed 1`] = `
+<li
+  className="weather-hour-item"
+>
+  <ul
+    className="weather-hour"
+  >
+    <li
+      className="weather-hour__hour"
+    >
+      ⏱ 
+      12:00:00
+    </li>
+    <li>
+      <span
+        className="weather-hour__prop"
+      >
+        Temperature:
+      </span>
+       
+      <strong>
+        22.5
+        ºC
+      </strong>
+    </li>
+    <li>
+      <span
+        className="weather-hour__prop"
+      >
+        Humidity:
+      </span>
+       
+      <strong>
+        60
+        %
+      </strong>
+    </li>
+    <li>
+      <span
+        className="weather-hour__prop"
+      >
+        Weather: 
+      </span>
+       
+      <strong>
+        cloudy
+      </strong>
+    </li>
+  </ul>
+</li>
+`;

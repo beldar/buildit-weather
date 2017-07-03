@@ -1,0 +1,14 @@
+.weather-report {
+  border: 1px solid #cbcbcb;
+}
+
+.weather-report__days {
+  display: flex;
+  flex-direction: row;
+}
+
+@media all and (max-width: 980px) {
+  .weather-report__days {
+    flex-direction: column;
+  }
+}

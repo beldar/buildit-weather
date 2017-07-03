@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WeatherReport should not render if list prop is not passed 1`] = `null`;
+
+exports[`WeatherReport should render correctly if list prop is passed 1`] = `
+<div
+  className="weather-report"
+>
+  <ul
+    className="weather-report__days"
+  >
+    <li
+      className="weather-day"
+    >
+      <h2
+        className="weather-day__title"
+      >
+        Thursday 6th of July
+      </h2>
+      <ul>
+        <li
+          className="weather-hour-item"
+        >
+          <ul
+            className="weather-hour"
+          >
+            <li
+              className="weather-hour__hour"
+            >
+              ⏱ 
+              12:00:00
+            </li>
+            <li>
+              <span
+                className="weather-hour__prop"
+              >
+                Temperature:
+              </span>
+               
+              <strong>
+                22.5
+                ºC
+              </strong>
+            </li>
+            <li>
+              <span
+                className="weather-hour__prop"
+              >
+                Humidity:
+              </span>
+               
+              <strong>
+                60
+                %
+              </strong>
+            </li>
+            <li>
+              <span
+                className="weather-hour__prop"
+              >
+                Weather: 
+              </span>
+               
+              <strong>
+                cloudy
+              </strong>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+`;
