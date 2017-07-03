@@ -7,12 +7,12 @@ import './App.css';
 
 export class App extends Component {
   componentDidMount() {
-    this.props.fetchData('http://api.openweathermap.org/data/2.5/forecast?q=London,uk');
+    this.props.fetchData('/weather');
   }
 
   getContent() {
     if (this.props.hasErrors) {
-      return <p>Sorry! There was an error loading the items: <code>{ this.props.hasErrors }</code></p>;
+      return <p>Sorry! There was an error loading the weather data: <code>{ this.props.hasErrors }</code></p>;
     }
 
     if (this.props.isLoading) {

@@ -1,7 +1,6 @@
 export const WEATHER_IS_LOADING = 'weather/WEATHER_IS_LOADING'
 export const WEATHER_SUCCESS = 'weather/WEATHER_SUCCESS'
 export const WEATHER_ERROR = 'weather/WEATHER_ERROR'
-const API_KEY = '1611b57cd45b95fdf4632fcdc5fc4a86';
 
 const initialState = {
   weather: {},
@@ -59,7 +58,7 @@ export const fetchWeather = (url) => {
   return (dispatch) => {
     dispatch(weatherIsLoading(true));
 
-    fetch(`${url}&units=metric&APPID=${API_KEY}`)
+    fetch(url)
       .then((response) => {
         if (!response.ok) {
           throw Error(response.statusText);
@@ -69,6 +68,6 @@ export const fetchWeather = (url) => {
       })
       .then((response) => response.json())
       .then((weather) => dispatch(weatherFetchDataSuccess(weather)))
-      .catch((e) => console.error(e) && dispatch(weatherHasErrored(e.message)));
+      .catch((e) => dispatch(weatherHasErrored(e.message)));
   };
 }
